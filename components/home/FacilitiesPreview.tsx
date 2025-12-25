@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { BiCart, BiLaptop, BiShield } from "react-icons/bi";
 import { BsHospital, BsHouse } from "react-icons/bs";
@@ -104,13 +105,19 @@ export default function FacilitiesPreview() {
                         >
                             {/* IMAGE */}
                             <div className="relative h-40 overflow-hidden">
-                                <div
-                                    className="absolute inset-0 bg-cover bg-center transition-transform duration-700
-                     group-hover:scale-110"
-                                    style={{ backgroundImage: `url(${item.image})` }}
+                                <Image
+                                    src={item.image}
+                                    alt={item.title}
+                                    fill
+                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                    loading="lazy"
+                                    placeholder="empty"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/40 to-transparent" />
+
+                                <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/40 to-transparent pointer-events-none" />
                             </div>
+
 
                             {/* CONTENT */}
                             <div className="p-6 relative">
