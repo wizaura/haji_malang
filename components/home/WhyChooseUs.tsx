@@ -30,7 +30,7 @@ export default function WhyChooseUs() {
                         <div className="flex flex-col gap-4">
                             <div className="relative h-36 rounded-lg overflow-hidden shadow-sm">
                                 <Image
-                                    src="/Pattadi-school/KSU06039.jpg"
+                                    src="/Pattadi-school/home-ws-1.jpg"
                                     alt="Academic Excellence"
                                     fill
                                     className="object-cover"
@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
 
                             <div className="relative h-36 rounded-lg overflow-hidden shadow-sm">
                                 <Image
-                                    src="/Pattadi-school/KSU06046.jpg"
+                                    src="/Pattadi-school/home-ws-2.jpg"
                                     alt="Faith Centred Education"
                                     fill
                                     className="object-cover"

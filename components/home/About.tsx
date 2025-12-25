@@ -74,14 +74,14 @@ export default function AboutSection() {
                                 className="absolute inset-0 bg-cover bg-center transition-opacity duration-500 opacity-100 group-hover:opacity-0"
                                 style={{
                                     backgroundImage:
-                                        "url('/Pattadi-school/KSU05984.jpg')",
+                                        "url('/Pattadi-school/home-ab-1.jpg')",
                                 }}
                             />
                             <div
                                 className="absolute inset-0 bg-cover bg-center transition-opacity duration-500 opacity-0 group-hover:opacity-100"
                                 style={{
                                     backgroundImage:
-                                        "url('/Pattadi-school/KSU05979.jpg')",
+                                        "url('/Pattadi-school/home-ab-2.jpg')",
                                 }}
                             />
                         </div>

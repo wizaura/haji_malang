@@ -29,7 +29,7 @@ export default function AcademicExcellence() {
                     <AcademicCard
                         title="PCMB Stream"
                         badge="PCMB"
-                        image="/Pattadi-school/KSU05981.jpg"
+                        image="/Pattadi-school/home-as-2.jpg"
                         subjects={[
                             "Physics",
                             "Chemistry",
@@ -42,7 +42,7 @@ export default function AcademicExcellence() {
                     <AcademicCard
                         title="PCMC Stream"
                         badge="PCMC"
-                        image="/Pattadi-school/KSU05943.jpg"
+                        image="/Pattadi-school/home-as-1.jpg"
                         subjects={[
                             "Physics",
                             "Chemistry",

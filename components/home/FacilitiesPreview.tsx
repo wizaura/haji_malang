@@ -10,7 +10,7 @@ const facilities = [
             "Fully air-conditioned, technology-enabled classrooms with digital learning tools.",
         icon: <BiLaptop />,
         image:
-            "/Pattadi-school/KSU06037.jpg",
+            "/Pattadi-school/home-fs-1.jpg",
     },
     {
         title: "Residential Hostels",
@@ -18,7 +18,7 @@ const facilities = [
             "Premium, fully air-conditioned hostels with 24/7 supervision and care.",
         icon: <BsHouse />,
         image:
-            "/Pattadi-school/KSU06030.jpg",
+            "/Pattadi-school/home-fs-2.jpg",
     },
     {
         title: "Health & Wellness",
@@ -26,7 +26,7 @@ const facilities = [
             "Gymnasium, swimming pool, landscaped parks, and 24/7 medical support.",
         icon: <BsHospital />,
         image:
-            "/Pattadi-school/KSU06023.jpg",
+            "/Pattadi-school/home-fs-3.jpg",
     },
     {
         title: "Library & Research",
@@ -34,7 +34,7 @@ const facilities = [
             "Extensive library and modern computer labs for focused study and research.",
         icon: <PiBooks />,
         image:
-            "/Pattadi-school/KSU06006.jpg",
+            "/Pattadi-school/home-fs-4.jpg",
     },
     {
         title: "Campus Convenience",
@@ -42,7 +42,7 @@ const facilities = [
             "Nutritious dining, laundry services, and in-campus Haji Malang Mart.",
         icon: <BiCart />,
         image:
-            "/Pattadi-school/KSU05958.jpg",
+            "/Pattadi-school/home-fs-5.jpg",
     },
     {
         title: "Safe & Secure Campus",
@@ -50,7 +50,7 @@ const facilities = [
             "Monitored, disciplined, and secure environment designed exclusively for girls.",
         icon: <BiShield />,
         image:
-            "/Pattadi-school/KSU05918.jpg",
+            "/Pattadi-school/home-fs-6.jpg",
     },
 ];
 
