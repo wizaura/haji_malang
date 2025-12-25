@@ -20,8 +20,7 @@ export default function Navbar() {
     ];
 
     return (
-        <header className="w-full">
-            {/* TOP INFO BAR */}
+        <header className="relative fixed w-full">
             {/* TOP INFO BAR */}
             <div className="bg-navy text-gray-200 text-xs">
                 <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
@@ -54,7 +53,7 @@ export default function Navbar() {
 
             {/* MAIN NAVBAR */}
             <div className="bg-white border-b border-gray-200">
-                <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+                <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
 
                     {/* LOGO */}
                     <Link href="/" className="flex items-center gap-3">
@@ -62,7 +61,7 @@ export default function Navbar() {
                             src={"/logo.png"}
                             alt="Logo"
                             width={200}
-                            height={30}
+                            height={10}
                         />
                     </Link>
 
