@@ -12,11 +12,11 @@ export default function Navbar() {
     const navLinks = [
         ["Home", "/"],
         ["About", "/about"],
-        ["Academics", "/academics"],
-        ["Campus Life", "/campus-life"],
-        ["Facilities", "/facilities"],
-        ["Admissions", "/admissions"],
-        ["Contact", "/contact"],
+        // ["Academics", "/academics"],
+        // ["Campus Life", "/campus-life"],
+        // ["Facilities", "/facilities"],
+        // ["Admissions", "/admissions"],
+        // ["Contact", "/contact"],
     ];
 
     return (

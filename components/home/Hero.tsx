@@ -84,7 +84,7 @@ export default function HeroSection() {
               gap-4 sm:gap-5
             ">
                             <Link
-                                href="/admissions"
+                                href="/"
                                 className="w-full sm:w-auto text-center rounded-full  border-2 border-white/50 bg-sky px-2 sm:px-3 py-2 sm:py-3 text-navy font-semibold shadow-lg hover:bg-skyLight hover:shadow-xl transition"
                             >
                                 Academic Year {year}–{year + 1}

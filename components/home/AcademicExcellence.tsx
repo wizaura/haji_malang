@@ -62,7 +62,7 @@ export default function AcademicExcellence() {
                     </p>
 
                     <Link
-                        href="/academics"
+                        href="/"
                         className="inline-flex items-center rounded-full bg-sky px-6 py-3 text-sm font-semibold text-navy hover:bg-skyLight transition"
                     >
                         Explore Academics →

@@ -61,10 +61,10 @@ export default function Footer() {
                         <ul className="space-y-2 text-sm">
                             <li><Link href="/" className="hover:text-sky transition">Home</Link></li>
                             <li><Link href="/about" className="hover:text-sky transition">About</Link></li>
-                            <li><Link href="/academics" className="hover:text-sky transition">Academics</Link></li>
+                            {/* <li><Link href="/academics" className="hover:text-sky transition">Academics</Link></li>
                             <li><Link href="/facilities" className="hover:text-sky transition">Facilities</Link></li>
                             <li><Link href="/admissions" className="hover:text-sky transition">Admissions</Link></li>
-                            <li><Link href="/contact" className="hover:text-sky transition">Contact</Link></li>
+                            <li><Link href="/contact" className="hover:text-sky transition">Contact</Link></li> */}
                         </ul>
                     </div>
 

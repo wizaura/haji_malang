@@ -82,7 +82,7 @@ export default function FacilitiesPreview() {
                     {/* CTA RIGHT */}
                     <div className="flex-shrink-0">
                         <Link
-                            href="/facilities"
+                            href="/"
                             className="inline-flex items-center rounded-full border border-navy px-6 py-3
                  text-sm font-medium text-navy hover:bg-navy hover:text-white transition"
                         >

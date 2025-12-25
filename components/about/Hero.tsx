@@ -26,7 +26,7 @@ export default function AboutHero() {
 
                     <div className="mt-8 flex flex-wrap gap-4">
                         <Link
-                            href="/admissions"
+                            href="/"
                             className="rounded-full bg-sky px-7 py-3 text-sm font-semibold text-navy hover:bg-skyLight transition"
                         >
                             Admissions 2026-27
