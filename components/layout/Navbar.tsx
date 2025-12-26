@@ -12,7 +12,7 @@ export default function Navbar() {
     const navLinks = [
         ["Home", "/"],
         ["About", "/about"],
-        // ["Academics", "/academics"],
+        ["Academics", "/academic-excellence"],
         // ["Campus Life", "/campus-life"],
         // ["Facilities", "/facilities"],
         // ["Admissions", "/admissions"],
@@ -43,10 +43,6 @@ export default function Navbar() {
                         </span>
                     </div>
 
-                    {/* RIGHT TEXT */}
-                    <div className="hidden sm:block text-skyLight text-xs tracking-wide">
-                        Empowering Futures Since 1890
-                    </div>
                 </div>
             </div>
 

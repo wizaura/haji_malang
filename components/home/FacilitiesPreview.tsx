@@ -51,7 +51,7 @@ const facilities = [
             "Monitored, disciplined, and secure environment designed exclusively for girls.",
         icon: <BiShield />,
         image:
-            "/home-fs-6.jpg",
+            "/home-as-2.jpg",
     },
 ];
 

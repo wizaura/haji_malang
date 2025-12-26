@@ -15,14 +15,14 @@ export default function AboutSection() {
                                 className="absolute inset-0 bg-cover bg-center transition-opacity duration-500 opacity-100 group-hover:opacity-0 blur-[1px]"
                                 style={{
                                     backgroundImage:
-                                        "url('/Pattadi-school/KSU06005.jpg')",
+                                        "url('/school/home-as-1.jpg')",
                                 }}
                             />
                             <div
-                                className="absolute inset-0 bg-cover bg-center transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+                                className="absolute inset-0 bg-cover bg-center transition-opacity duration-500 opacity-0 group-hover:opacity-100 blur-[1px]"
                                 style={{
                                     backgroundImage:
-                                        "url('/Pattadi-school/KSU06009.jpg')",
+                                        "url('/home-fs-4.jpg')",
                                 }}
                             />
                         </div>

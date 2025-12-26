@@ -29,7 +29,7 @@ export default function AcademicExcellence() {
                     <AcademicCard
                         title="PCMB Stream"
                         badge="PCMB"
-                        image="/school/home-as-2.jpg"
+                        image="/home-fs-1.jpg"
                         subjects={[
                             "Physics",
                             "Chemistry",
