@@ -13,7 +13,7 @@ export default function Navbar() {
         ["Home", "/"],
         ["About", "/about"],
         ["Academics", "/academic-excellence"],
-        // ["Campus Life", "/campus-life"],
+        ["Classrooms", "/smart-classroom-and-technology"],
         // ["Facilities", "/facilities"],
         // ["Admissions", "/admissions"],
         // ["Contact", "/contact"],
