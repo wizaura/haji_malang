@@ -55,20 +55,20 @@ export default function TeachingMethodology() {
                 </div>
 
                 {/* METHODOLOGY GRID */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 
                     {methodology.map((item) => (
                         <div
                             key={item.title}
                             className="group relative rounded-2xl border border-gray-200
-                                       bg-gray-50 p-6 sm:p-8 transition
-                                       hover:-translate-y-1 hover:shadow-xl"
+                                        bg-gray-50 p-6 sm:p-8 transition
+                                        hover:-translate-y-1 hover:shadow-xl"
                         >
                             <div className="flex items-center gap-4 mb-4">
                                 <div
                                     className="flex items-center justify-center w-12 h-12 rounded-xl
-                                               bg-navy text-white text-xl
-                                               group-hover:bg-sky group-hover:text-navy transition"
+                                                bg-navy text-white text-xl
+                                                group-hover:bg-sky group-hover:text-navy transition"
                                 >
                                     {item.icon}
                                 </div>

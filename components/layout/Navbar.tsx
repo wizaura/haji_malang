@@ -15,7 +15,7 @@ export default function Navbar() {
         ["Academics", "/academic-excellence"],
         ["Facilities", "/smart-classroom-and-technology"],
         // ["Facilities", "/facilities"],
-        // ["Admissions", "/admissions"],
+        ["Admissions", "/admissions"],
         // ["Contact", "/contact"],
     ];
 

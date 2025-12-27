@@ -49,7 +49,7 @@ export default function AcademicExcellenceCore() {
                     <div className="relative">
                         <div className="relative h-[260px] sm:h-[360px] rounded-2xl overflow-hidden shadow-lg">
                             <Image
-                                src="/academics/academic-core.jpg"
+                                src="/academics/main.jpg"
                                 alt="Academic Excellence"
                                 fill
                                 className="object-cover"

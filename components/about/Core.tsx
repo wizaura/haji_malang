@@ -22,7 +22,7 @@ export default function AboutCore() {
                         <p className="mt-6 text-base sm:text-lg text-gray-700 leading-relaxed">
                             Guided by the renowned scholar{" "}
                             <span className="font-semibold text-navy">
-                                Sayyid Abdul Rahman Sadat Thangal
+                                Sayyid Abdul Rahman Sadath Thangal
                             </span>, Haji Malang International Girls Campus is more than an academic
                             institution — it is a foundation for life.
                         </p>

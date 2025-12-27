@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const leaders = {
     founder: {
-        name: "Sayyid Abdul Rahman Sadat Thangal",
+        name: "Sayyid Abdul Rahman Sadath Thangal",
         role: "Founder & CEO",
         image: "/about/founder.jpeg",
     },
@@ -121,7 +121,7 @@ export default function LeadershipTreeHorizontal() {
                 </div>
 
                 {/* HORIZONTAL TREE */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="max-w-5xl grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 
                     {/* FOUNDER */}
                     <div className="flex justify-center">
@@ -141,17 +141,21 @@ export default function LeadershipTreeHorizontal() {
                         </div>
                     </div>
 
-                    {/* MANAGING DIRECTOR */}
-                    <div className="flex justify-center">
-                        <PersonCard {...leaders.managingDirector} variant="bronze" />
-                    </div>
+                    {/* MANAGING DIRECTOR + AMBASSADOR */}
+                    <div className="flex flex-col items-center gap-4 lg:col-span-2">
+                        <div className="flex flex-col items-center sm:flex-row gap-6">
+                            <div className="flex justify-center">
+                                <PersonCard {...leaders.managingDirector} variant="bronze" />
+                            </div>
 
-                    {/* AMBASSADOR */}
-                    <div className="flex justify-center">
-                        <PersonCard {...leaders.ambassador} variant="bronze" />
+                            <div className="flex justify-center">
+                                <PersonCard {...leaders.ambassador} variant="bronze" />
+                            </div>
+                        </div>
                     </div>
 
                 </div>
+
             </div>
         </section>
     );
