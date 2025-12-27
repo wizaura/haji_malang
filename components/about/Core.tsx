@@ -29,35 +29,31 @@ export default function AboutCore() {
 
                         <p className="mt-4 text-base sm:text-lg text-gray-700 leading-relaxed">
                             The campus was envisioned as a space where education nurtures both
-                            intellect and character. We believe true learning empowers young
-                            women with clarity of purpose, ethical discipline, and confidence.
+                            intellect and character, empowering young women with clarity of
+                            purpose and ethical discipline.
                         </p>
 
                         <p className="mt-4 text-base sm:text-lg text-gray-700 leading-relaxed">
-                            By blending high-standard academic curricula with spiritual growth
-                            and personal development, we prepare our students to lead meaningful
-                            lives rooted in values and responsibility.
+                            By blending high-standard academics with spiritual growth, we prepare
+                            students to lead meaningful lives rooted in values and responsibility.
                         </p>
-
                     </div>
 
-                    {/* RIGHT – IMAGE SPACE */}
-                    <div className="relative w-full max-w-md mx-auto lg:mx-0">
+                    {/* RIGHT – IMAGE (PUSHED FAR RIGHT) */}
+                    <div className="relative w-full lg:ml-auto lg:max-w-lg">
 
-                        <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                        <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
                             <Image
-                                src="/about/about-campus.jpg" // replace with your image
+                                src="/hero-1.webp"
                                 alt="Haji Malang International Girls Campus"
                                 fill
                                 className="object-cover"
-                                sizes="(max-width: 768px) 100vw, 50vw"
-                                priority={false}
+                                sizes="(max-width: 768px) 100vw, 45vw"
                             />
                         </div>
 
                         {/* Subtle accent */}
                         <div className="absolute -z-10 -bottom-6 -right-6 h-full w-full rounded-2xl bg-sky/10" />
-
                     </div>
 
                 </div>

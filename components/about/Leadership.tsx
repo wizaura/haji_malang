@@ -1,78 +1,157 @@
 import Image from "next/image";
 
-export default function LeadershipVision() {
+const leaders = {
+    founder: {
+        name: "Sayyid Abdul Rahman Sadat Thangal",
+        role: "Founder & CEO",
+        image: "/about/founder.jpeg",
+    },
+    board: [
+        {
+            name: "Shaik Ayub Ahmed",
+            role: "Prop – AASCO Steel Trading",
+            image: "/about/board-ayub.jpeg",
+        },
+        {
+            name: "Usman Sharief",
+            role: "CEO – Hamadi Al-Jubail Manufacturing Co.",
+            image: "/about/board-usman.jpeg",
+        },
+    ],
+    managingDirector: {
+        name: "Muhammad Shareef Saquafi Mani",
+        role: "Managing Director",
+        image: "/about/md.jpeg",
+    },
+    ambassador: {
+        name: "Sayyed Shamshuddeen Sabith",
+        role: "Global Ambassador",
+        image: "/about/ambassador.jpeg",
+    },
+};
+
+function PersonCard({
+    name,
+    role,
+    image,
+    variant = "neutral",
+}: {
+    name: string;
+    role: string;
+    image: string;
+    variant?: "gold" | "silver" | "bronze" | "neutral";
+}) {
+    const styles = {
+        gold: {
+            card: "border-yellow-400/40 bg-yellow-50/40 shadow-md",
+            ring: "border-yellow-400/60",
+            bar: "bg-yellow-400",
+        },
+        silver: {
+            card: "border-gray-300 bg-gray-50 shadow-sm",
+            ring: "border-gray-300",
+            bar: "bg-gray-300",
+        },
+        bronze: {
+            card: "border-amber-700/30 bg-amber-50/30 shadow-sm",
+            ring: "border-amber-700/40",
+            bar: "bg-amber-700/60",
+        },
+        neutral: {
+            card: "border-gray-200 bg-white shadow-sm",
+            ring: "border-gray-200",
+            bar: "",
+        },
+    };
+
+    const s = styles[variant];
+
     return (
-        <section
-            id="leadership"
-            className="relative bg-gray-50 py-10 sm:py-12"
+        <div
+            className={`w-[220px] flex flex-col items-center text-center rounded-2xl border
+            ${s.card}
+            px-5 py-6 transition hover:shadow-lg`}
         >
+            {/* IMAGE */}
+            <div
+                className={`relative w-28 h-28 rounded-full overflow-hidden border ${s.ring}`}
+            >
+                <Image src={image} alt={name} fill className="object-cover" />
+            </div>
+
+            {/* TEXT */}
+            <h4 className="mt-4 text-sm font-semibold text-navy leading-tight">
+                {name}
+            </h4>
+
+            <p className="mt-1 text-xs text-gray-600">
+                {role}
+            </p>
+
+            {/* ACCENT BAR */}
+            {variant !== "neutral" && (
+                <div className={`mt-4 h-1 w-10 rounded-full ${s.bar}`} />
+            )}
+        </div>
+    );
+}
+
+
+
+export default function LeadershipTreeHorizontal() {
+    return (
+        <section className="bg-gray-50 py-10 sm:py-14">
+            <div className="absolute inset-x-0 top-32 h-40 bg-navy/5" />
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+                {/* HEADER */}
+                <div className="max-w-3xl mb-10">
+                    <span className="inline-block bg-sky/10 border border-sky/40 px-4 py-1.5 rounded-full mb-4 text-sm font-medium text-sky">
+                        Leadership Structure
+                    </span>
 
-                    {/* LEFT – FOUNDER IMAGE */}
-                    <div className="relative w-full max-w-md mx-auto lg:mx-0">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-navy">
+                        Governance & Visionary Leadership
+                    </h2>
 
-                        <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
-                            <Image
-                                src="/about/founder.jpg"   // replace with actual image
-                                alt="Sayyid Abdul Rahman Sadat Thangal"
-                                fill
-                                className="object-cover"
-                                sizes="(max-width: 768px) 100vw, 40vw"
-                            />
-                        </div>
+                    <p className="mt-4 text-gray-700 text-lg">
+                        A horizontally structured leadership framework for clarity,
+                        accountability, and vision-driven governance.
+                    </p>
+                </div>
 
-                        {/* Image caption */}
-                        <div className="mt-4 text-center">
-                            <p className="font-semibold text-navy">
-                                Sayyid Abdul Rahman Sadat Thangal
-                            </p>
-                            <p className="text-sm text-gray-500">
-                                Visionary Leader & Renowned Scholar
-                            </p>
-                        </div>
+                {/* HORIZONTAL TREE */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 
-                        {/* Subtle background accent */}
-                        <div className="absolute -z-10 -bottom-6 -left-6 h-full w-full rounded-2xl bg-sky/10" />
+                    {/* FOUNDER */}
+                    <div className="flex justify-center">
+                        <PersonCard {...leaders.founder} variant="gold" />
                     </div>
 
-                    {/* RIGHT – CONTENT */}
-                    <div className="max-w-xl">
-
-                        <span className="inline-block bg-sky/10 border border-sky/40 px-4 py-1.5 rounded-full mb-4 text-sm font-medium text-sky">
-                            Leadership & Vision
+                    {/* BOARD */}
+                    <div className="flex flex-col items-center gap-4">
+                        <span className="text-sm uppercase tracking-wide text-gray-500 font-bold">
+                            Board of Directors
                         </span>
 
-                        <h2 className="text-3xl sm:text-4xl font-bold text-navy leading-tight">
-                            Guided by Wisdom, <br className="hidden sm:block" />
-                            Inspired by Purpose
-                        </h2>
+                        <div className="flex flex-col sm:flex-row gap-6">
+                            {leaders.board.map((person) => (
+                                <PersonCard key={person.name} {...person} variant="silver" />
+                            ))}
+                        </div>
+                    </div>
 
-                        <p className="mt-6 text-base sm:text-lg text-gray-700 leading-relaxed">
-                            Under the guidance of the renowned scholar{" "}
-                            <span className="font-semibold text-navy">
-                                Sayyid Abdul Rahman Sadat Thangal
-                            </span>, Haji Malang International Girls Campus was envisioned as a
-                            space where education nurtures both intellect and character.
-                        </p>
+                    {/* MANAGING DIRECTOR */}
+                    <div className="flex justify-center">
+                        <PersonCard {...leaders.managingDirector} variant="bronze" />
+                    </div>
 
-                        <p className="mt-4 text-base sm:text-lg text-gray-700 leading-relaxed">
-                            The leadership philosophy is rooted in balance — harmonizing modern
-                            academic excellence with spiritual grounding, ethical discipline,
-                            and social responsibility.
-                        </p>
-
-                        <p className="mt-4 text-base sm:text-lg text-gray-700 leading-relaxed">
-                            This vision empowers young women with confidence, moral clarity,
-                            and purpose, enabling them to lead meaningful lives and contribute
-                            positively to society and the nation.
-                        </p>
-
+                    {/* AMBASSADOR */}
+                    <div className="flex justify-center">
+                        <PersonCard {...leaders.ambassador} variant="bronze" />
                     </div>
 
                 </div>
-
             </div>
         </section>
     );
