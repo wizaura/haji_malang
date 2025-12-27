@@ -13,8 +13,7 @@ export default function Navbar() {
         ["Home", "/"],
         ["About", "/about"],
         ["Academics", "/academic-excellence"],
-        ["Facilities", "/smart-classroom-and-technology"],
-        // ["Facilities", "/facilities"],
+        ["Facilities", "/facilities"],
         ["Admissions", "/admissions"],
         // ["Contact", "/contact"],
     ];

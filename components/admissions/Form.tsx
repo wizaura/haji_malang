@@ -6,7 +6,7 @@ export default function AdmissionsForm() {
             className="
                 bg-white rounded-2xl border border-gray-200 shadow-xl
                 p-6 sm:p-8
-                lg:sticky lg:top-5
+                lg:sticky lg:top-14
             "
         >
             <h3 className="text-2xl font-bold text-navy mb-2">
@@ -43,13 +43,6 @@ export default function AdmissionsForm() {
                     placeholder="WhatsApp Number"
                     className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-sky outline-none"
                 />
-
-                <select className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-sky outline-none">
-                    <option>Studying Syllabus</option>
-                    <option>State</option>
-                    <option>CBSE</option>
-                    <option>ICSE</option>
-                </select>
 
                 <select className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-sky outline-none">
                     <option>Course</option>
