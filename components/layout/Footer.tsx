@@ -91,12 +91,16 @@ export default function Footer() {
                         <ul className="space-y-3 text-sm text-gray-400">
                             <li className="flex items-start gap-3">
                                 <HiOutlineLocationMarker className="mt-0.5 text-sky text-base" />
-                                <span>Malappuram · Palakkad · Kannur</span>
+                                <span>Adresss
+                                    Moodbidre,<br />
+                                    Pattadi, Post Perinje
+                                    Belthangady Dk<br />
+                                    Karnataka -574197</span>
                             </li>
 
                             <li className="flex items-center gap-3">
                                 <HiOutlinePhone className="text-sky text-base" />
-                                <span>+91 7510 22 8881</span>
+                                <span>+91 76250 97336</span>
                             </li>
 
                             <li className="flex items-center gap-3">

@@ -3,7 +3,7 @@ import AcademicCard from "../ui/AcademicCard";
 
 export default function AcademicExcellence() {
     return (
-        <section className="relative bg-white py-16 sm:py-20">
+        <section className="relative bg-white py-10 sm:py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
                 {/* HEADER */}
@@ -29,7 +29,7 @@ export default function AcademicExcellence() {
                     <AcademicCard
                         title="PCMB Stream"
                         badge="PCMB"
-                        image="/home-fs-1.jpg"
+                        image="/home/home-fs-1.jpg"
                         subjects={[
                             "Physics",
                             "Chemistry",
@@ -42,7 +42,7 @@ export default function AcademicExcellence() {
                     <AcademicCard
                         title="PCMC Stream"
                         badge="PCMC"
-                        image="/school/home-as-1.jpg"
+                        image="/home/home-as-1.jpg"
                         subjects={[
                             "Physics",
                             "Chemistry",

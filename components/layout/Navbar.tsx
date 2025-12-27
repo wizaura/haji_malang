@@ -13,7 +13,7 @@ export default function Navbar() {
         ["Home", "/"],
         ["About", "/about"],
         ["Academics", "/academic-excellence"],
-        ["Classrooms", "/smart-classroom-and-technology"],
+        ["Facilities", "/smart-classroom-and-technology"],
         // ["Facilities", "/facilities"],
         // ["Admissions", "/admissions"],
         // ["Contact", "/contact"],
@@ -29,7 +29,7 @@ export default function Navbar() {
                     <div className="flex items-center gap-4">
                         <span className="flex items-center gap-1.5">
                             <HiOutlinePhone className="text-sky text-sm" />
-                            <span className="hidden sm:inline">+91 7510 22 8881</span>
+                            <span className="hidden sm:inline">+91 76250 97336</span>
                         </span>
 
                         <span className="hidden md:flex items-center gap-1.5">
@@ -39,7 +39,11 @@ export default function Navbar() {
 
                         <span className="hidden lg:flex items-center gap-1.5">
                             <HiOutlineLocationMarker className="text-sky text-sm" />
-                            <span>Malappuram · Palakkad · Kannur</span>
+                            <span>Adresss
+                                Moodbidre,
+                                Pattadi, Post Perinje
+                                Belthangady Dk
+                                Karnataka -574197</span>
                         </span>
                     </div>
 

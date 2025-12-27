@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutSection() {
@@ -11,19 +12,33 @@ export default function AboutSection() {
                     {/* LEFT IMAGE CARD */}
                     <div className="lg:col-span-3">
                         <div className="group relative h-[200px] sm:h-[400px] rounded-xl overflow-hidden shadow-lg">
-                            <div
-                                className="absolute inset-0 bg-cover bg-center transition-opacity duration-500 opacity-100 group-hover:opacity-0 blur-[1px]"
-                                style={{
-                                    backgroundImage:
-                                        "url('/school/home-as-1.jpg')",
-                                }}
+
+                            {/* IMAGE 1 */}
+                            <Image
+                                src="/home/home-as-1.jpg"
+                                alt="Campus view"
+                                fill
+                                className="
+        object-cover
+        transition-opacity duration-500
+        opacity-100 group-hover:opacity-0
+        blur-[1px]
+      "
+                                sizes="(max-width: 640px) 100vw, 25vw"
                             />
-                            <div
-                                className="absolute inset-0 bg-cover bg-center transition-opacity duration-500 opacity-0 group-hover:opacity-100 blur-[1px]"
-                                style={{
-                                    backgroundImage:
-                                        "url('/home-fs-4.jpg')",
-                                }}
+
+                            {/* IMAGE 2 */}
+                            <Image
+                                src="/home/home-fs-4.jpg"
+                                alt="Campus life"
+                                fill
+                                className="
+        object-cover
+        transition-opacity duration-500
+        opacity-0 group-hover:opacity-100
+        blur-[1px]
+      "
+                                sizes="(max-width: 640px) 100vw, 25vw"
                             />
                         </div>
                     </div>
@@ -44,7 +59,7 @@ export default function AboutSection() {
                             <p className="mt-6 text-base sm:text-lg text-gray-700 leading-relaxed">
                                 Guided by the visionary leadership of{" "}
                                 <span className="font-semibold text-navy">
-                                    Sayyid Abdul Rahman Sadat Thangal
+                                    Sayyid Abdul Rahman Sadath Thangal
                                 </span>, Haji Malang International Girls Campus is more than an
                                 academic institution — it is a foundation for life.
                             </p>
@@ -70,19 +85,33 @@ export default function AboutSection() {
                     {/* RIGHT IMAGE CARD */}
                     <div className="lg:col-span-3">
                         <div className="group relative h-[200px] sm:h-[400px] rounded-xl overflow-hidden shadow-lg">
-                            <div
-                                className="absolute inset-0 bg-cover bg-center transition-opacity duration-500 opacity-100 group-hover:opacity-0"
-                                style={{
-                                    backgroundImage:
-                                        "url('/school/home-ab-1.jpg')",
-                                }}
+
+                            {/* IMAGE 1 */}
+                            <Image
+                                src="/home/home-ab-1.jpg"
+                                alt="Campus view 2"
+                                fill
+                                className="
+        object-cover
+        transition-opacity duration-500
+        opacity-100 group-hover:opacity-0
+        blur-[1px]
+      "
+                                sizes="(max-width: 640px) 100vw, 25vw"
                             />
-                            <div
-                                className="absolute inset-0 bg-cover bg-center transition-opacity duration-500 opacity-0 group-hover:opacity-100"
-                                style={{
-                                    backgroundImage:
-                                        "url('/school/home-ab-2.jpg')",
-                                }}
+
+                            {/* IMAGE 2 */}
+                            <Image
+                                src="/home/home-ab-2.jpg"
+                                alt="Campus life 2"
+                                fill
+                                className="
+        object-cover
+        transition-opacity duration-500
+        opacity-0 group-hover:opacity-100
+        blur-[1px]
+      "
+                                sizes="(max-width: 640px) 100vw, 25vw"
                             />
                         </div>
                     </div>

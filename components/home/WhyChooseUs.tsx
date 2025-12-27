@@ -23,31 +23,8 @@ export default function WhyChooseUs() {
                 </div>
 
                 {/* CONTENT */}
-                <div className="mx-auto max-w-5xl">
-                    <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-10 items-center justify-center">
-
-                        {/* LEFT – SMALL IMAGES */}
-                        <div className="flex flex-col gap-4">
-                            <div className="relative h-36 rounded-lg overflow-hidden shadow-sm">
-                                <Image
-                                    src="/school/home-ws-1.jpg"
-                                    alt="Academic Excellence"
-                                    fill
-                                    className="object-cover"
-                                />
-                                <div className="absolute inset-0 bg-navy/15" />
-                            </div>
-
-                            <div className="relative h-36 rounded-lg overflow-hidden shadow-sm">
-                                <Image
-                                    src="/school/home-ws-2.jpg"
-                                    alt="Faith Centred Education"
-                                    fill
-                                    className="object-cover"
-                                />
-                                <div className="absolute inset-0 bg-navy/15" />
-                            </div>
-                        </div>
+                <div className="mx-auto max-w-8xl">
+                    <div className="grid grid-cols-1 lg:grid-cols-[480px_1fr] gap-10 items-center justify-center">
 
                         {/* RIGHT – POINTS */}
                         <div className="relative p-4">
@@ -55,10 +32,10 @@ export default function WhyChooseUs() {
 
                                 <div className="relative">
                                     <span className="absolute -left-[38px] top-0 flex h-7 w-7 items-center justify-center
-                                 rounded-full bg-sky text-navy text-xs font-semibold">
+                                    rounded-full bg-sky text-navy text-xs font-semibold">
                                         01
                                     </span>
-                                    <h3 className="text-lg font-semibold text-navy mb-1">
+                                    <h3 className="text-xl font-semibold text-navy mb-1">
                                         Strong Academic Foundation
                                     </h3>
                                     <p className="text-base text-gray-700 leading-relaxed">
@@ -69,10 +46,10 @@ export default function WhyChooseUs() {
 
                                 <div className="relative">
                                     <span className="absolute -left-[38px] top-0 flex h-7 w-7 items-center justify-center
-                                 rounded-full bg-sky text-navy text-xs font-semibold">
+                                    rounded-full bg-sky text-navy text-xs font-semibold">
                                         02
                                     </span>
-                                    <h3 className="text-lg font-semibold text-navy mb-1">
+                                    <h3 className="text-xl font-semibold text-navy mb-1">
                                         Faith-Centred Learning
                                     </h3>
                                     <p className="text-base text-gray-700 leading-relaxed">
@@ -83,10 +60,10 @@ export default function WhyChooseUs() {
 
                                 <div className="relative">
                                     <span className="absolute -left-[38px] top-0 flex h-7 w-7 items-center justify-center
-                                 rounded-full bg-sky text-navy text-xs font-semibold">
+                                    rounded-full bg-sky text-navy text-xs font-semibold">
                                         03
                                     </span>
-                                    <h3 className="text-lg font-semibold text-navy mb-1">
+                                    <h3 className="text-xl font-semibold text-navy mb-1">
                                         Safe Girls-Only Campus
                                     </h3>
                                     <p className="text-base text-gray-700 leading-relaxed">

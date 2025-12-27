@@ -7,7 +7,7 @@ const images = [
     "/hero-2.jpg",
     "/hero-6.jpg",
     "/hero-4.jpg",
-    "/hero-5.jpg",
+    "/home-fs-2.jpg",
 ];
 
 export default function HeroSection() {
@@ -42,41 +42,49 @@ export default function HeroSection() {
             <div className="relative z-10 h-full flex items-center">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full">
                     <div className="
-            max-w-5xl text-white
+            max-w-3xl text-white
             text-center sm:text-left
             mx-auto sm:mx-0
             sm:ml-6 lg:ml-12
           ">
 
-                        {/* ADMISSIONS BADGE */}
-                        <span className="inline-block my-3 rounded-full border border-white/40 bg-navy/40 px-4 sm:px-5 py-1.5 text-xs sm:text-sm font-medium text-navyLight">
-                            Admissions Opening · January {year}
-                        </span>
+                        <h2 className="
+              mt-8 font-extrabold leading-tight
+              text-3xl sm:text-4xl md:text-4xl lg:text-5xl
+            ">
+                            Shaping the Future with <br />
+                            <span className="text-sky">Excellence</span>{" "}
+                            <span className="text-white/90">and</span>{" "}
+                            <span className="text-skyLight">Values</span>
+                        </h2>
 
-                        <h1
-                            className="
-    mt-2 font-extrabold leading-tight
-    text-2xl sm:text-3xl md:text-3xl lg:text-4xl
-  "
-                        >
-                            Welcome to <br />
-                            <span className="text-sky text-3xl sm:text-4xl md:text-4xl lg:text-5xl">
-                                Haji Malang International Girls Campus
-                            </span>
-                        </h1>
+                        {/* MARQUEE INSTITUTE NAME */}
+                        <div className="overflow-hidden whitespace-nowrap my-4">
+                            <h1
+                                className="
+      inline-block
+      animate-marquee
+      text-white/50
+      font-extrabold
+      tracking-widest
+      uppercase
+      text-xl sm:text-2xl md:text-3xl lg:text-4xl
+      hover:pause-marquee
+    "
+                            >
+                                Haji Malang International Girls Campus · Haji Malang International Girls Campus ·
+                            </h1>
+                        </div>
 
 
-                        <p
-                            className="
-    mt-6 sm:mt-7
-    text-base sm:text-md md:text-lg
-    text-gray-200 leading-relaxed font-medium
-    max-w-2xl mx-auto sm:mx-0
-  "
-                        >
-                            A welcoming space dedicated to learning, growth, and values, where young
-                            women are encouraged to explore their potential, develop confidence, and
-                            build a strong foundation for higher education and a purposeful future.
+                        <p className="
+              mt-6 sm:mt-7
+              text-base sm:text-md md:text-lg
+              text-gray-200 leading-relaxed
+              max-w-2xl mx-auto sm:mx-0
+            ">
+                            We welcome you to <strong className="font-bold italic text-sky">Haji Malang International Girls Campus</strong> — a
+                            sanctuary of modern education rooted in Islamic tradition.
                         </p>
 
                         {/* CTA */}

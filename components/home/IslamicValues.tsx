@@ -8,26 +8,31 @@ const values = [
         description:
             "Structured Quran studies integrated into daily academic life to strengthen faith and character.",
         icon: <FaQuran />,
+        image: "/home/iv-1.jpg",
     },
     {
         title: "Shariah Studies",
         description:
             "Systematic learning of Shariah Kitabs to guide ethical conduct and spiritual understanding.",
         icon: <FaHandsPraying />,
+        image: "/home/iv-2.jpg",
     },
     {
         title: "Female Scholars",
         description:
             "Dedicated Shariah classes conducted exclusively by qualified female scholars.",
         icon: <FaFemale />,
+        image: "/home/iv-3.jpg",
     },
     {
         title: "Prayer-Centred Campus",
         description:
             "Peaceful prayer halls and a campus environment that nurtures discipline and devotion.",
         icon: <FaMosque />,
+        image: "/home/iv-4.jfif",
     },
 ];
+
 
 export default function IslamicValuesPreview() {
     return (
@@ -63,32 +68,46 @@ export default function IslamicValuesPreview() {
                 </div>
 
                 {/* VALUES GRID */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {values.map((item) => (
                         <div
                             key={item.title}
-                            className="group relative rounded-xl border border-sky/30 bg-sky/5 p-6
-                         transition hover:-translate-y-1 hover:shadow-xl"
+                            className="group relative rounded-2xl overflow-hidden
+                 border border-sky/30 bg-sky/5
+                 hover:shadow-xl transition"
                         >
-                            {/* ICON */}
-                            <div className="flex items-center justify-center w-12 h-12 rounded-xl
-                              bg-navy text-white text-xl mb-4
-                              group-hover:bg-sky group-hover:text-navy transition">
-                                {item.icon}
+                            {/* IMAGE LAYER */}
+                            <div
+                                className="absolute inset-0 bg-cover bg-center opacity-0 scale-105
+                   group-hover:opacity-100 group-hover:scale-100
+                   transition-all duration-700"
+                                style={{ backgroundImage: `url(${item.image})` }}
+                            />
+                            <div
+                                className="absolute inset-0 bg-navy/10
+                   opacity-0 group-hover:opacity-100
+                   transition duration-700"
+                            />
+
+                            {/* CONTENT */}
+                            <div className="relative p-6 z-10 transition group-hover:text-white">
+                                {/* ICON */}
+                                <div
+                                    className="flex items-center justify-center w-12 h-12 rounded-xl
+                     bg-navy text-white text-xl mb-4
+                     group-hover:bg-sky group-hover:text-navy transition"
+                                >
+                                    {item.icon}
+                                </div>
+
+                                <h3 className="text-lg font-semibold mb-2 group-hover:opacity-0 transition">
+                                    {item.title}
+                                </h3>
+
+                                <p className="text-sm leading-relaxed group-hover:opacity-0 transition">
+                                    {item.description}
+                                </p>
                             </div>
-
-                            <h3 className="text-lg font-semibold text-navy">
-                                {item.title}
-                            </h3>
-
-                            <p className="mt-2 text-sm text-gray-600 leading-relaxed">
-                                {item.description}
-                            </p>
-
-                            {/* ACCENT */}
-                            <div className="absolute bottom-0 left-0 h-1 w-full bg-sky scale-x-0
-                              group-hover:scale-x-100 origin-left transition-transform" />
                         </div>
                     ))}
                 </div>

@@ -19,6 +19,10 @@
     animation: marquee 18s linear infinite;
 }
 
+.pause-marquee:hover {
+    animation-play-state: paused;
+}
+
 .perspective {
     perspective: 1200px;
 }
